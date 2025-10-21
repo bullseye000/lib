@@ -1,0 +1,2 @@
+# .gitignore (add this line)
+server/.env
