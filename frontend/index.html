@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="logo-area">
+        <img src="https://img.icons8.com/color/96/library.png" class="logo-img">
+        <h1>Digital Library</h1>
+        <p class="subtitle">Access knowledge anytime, anywhere.</p>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="switchTab('studentLogin')">Student Login</button>
+        <button class="tab" onclick="switchTab('studentRegister')">Student Register</button>
+        <button class="tab" onclick="switchTab('librarianLogin')">Librarian Login</button>
+        <button class="tab" onclick="switchTab('librarianRegister')">Librarian Register</button>
+    </div>
+
+    <!-- STUDENT LOGIN -->
+    <div id="studentLogin" class="form-box">
+        <input type="email" id="slEmail" placeholder="Email">
+        <input type="password" id="slPassword" placeholder="Password">
+        <button onclick="studentLogin()">Login</button>
+    </div>
+
+    <!-- STUDENT REGISTER -->
+    <div id="studentRegister" class="form-box hidden">
+        <input type="text" id="srName" placeholder="Full Name">
+        <input type="email" id="srEmail" placeholder="Email">
+        <input type="password" id="srPassword" placeholder="Password">
+        <button onclick="studentRegister()">Register</button>
+    </div>
+
+    <!-- LIBRARIAN LOGIN -->
+    <div id="librarianLogin" class="form-box hidden">
+        <input type="text" id="llName" placeholder="Name">
+        <input type="password" id="llPassword" placeholder="Password">
+        <button onclick="librarianLogin()">Login</button>
+    </div>
+
+    <!-- LIBRARIAN REGISTER -->
+    <div id="librarianRegister" class="form-box hidden">
+        <input type="text" id="lrName" placeholder="Full Name">
+        <input type="text" id="lrId" placeholder="Librarian ID">
+        <input type="password" id="lrPassword" placeholder="Password">
+        <button onclick="librarianRegister()">Register</button>
+    </div>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

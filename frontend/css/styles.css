@@ -1,0 +1,132 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #0a0f24, #1a2641);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #e4e4e4;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.auth-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px 35px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+/* ---------------- LOGO AREA ---------------- */
+.logo-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #b9c4e0;
+    margin-top: -8px;
+}
+
+/* ---------------- TABS ---------------- */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 0;
+    background: rgba(255,255,255,0.1);
+    color: #bbb;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+.tab.active {
+    background: #007bff;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.4);
+}
+
+/* ---------------- INPUTS ---------------- */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.12);
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+/* ---------------- BUTTONS ---------------- */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0a8fff;
+    box-shadow: 0 4px 12px rgba(10,140,255,0.4);
+}
+
+/* ---------------- FORM BOX ---------------- */
+.hidden {
+    display: none;
+}
+
+.form-box {
+    margin-top: 10px;
+}
+
+/* ---------------- MESSAGE ---------------- */
+#message {
+    text-align: center;
+    margin-bottom: 8px;
+}
+#message.success {
+    color: #57ffab;
+}
+#message.error {
+    color: #ff6767;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

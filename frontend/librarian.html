@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <h2>📘 Librarian Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+    <div id="stats"></div>
+
+    <div class="tabs">
+        <button class="tab active" onclick="loadManageBooks()">Manage Books</button>
+        <button class="tab" onclick="loadBorrowedBooks()">Borrowed Books</button>
+        <button class="tab" onclick="loadStudents()">Students</button>
+    </div>
+
+    <div id="content"></div>
+
+</div>
+
+<script src="js/librarian.js"></script>
+
+</body>
+</html>
